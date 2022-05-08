@@ -84,10 +84,10 @@ const Login = () => {
         </div>
         <div className="md:flex md:items-center mb-6">
           <div className="md:w-1/3"></div>
-          <label className="md:w-2/3 block text-gray-500 font-bold">
+          {/* <label className="md:w-2/3 block text-gray-500 font-bold">
             <input className="mr-2 leading-tight" type="checkbox" />
             <span className="text-sm">Send me your newsletter!</span>
-          </label>
+          </label> */}
         </div>
         <div className="md:flex md:items-center">
           <div className="md:w-1/3"></div>
@@ -95,17 +95,19 @@ const Login = () => {
             <input
               className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit" value="Log in"
-            />
-            
-            
+            />  
           </div>
         </div>
         
       </form>
-      <p className="text-xl font-bold pb-16 pt-5 ">If You Not Registered !! <span className="text-orange-400 cursor-pointer" onClick={navigateRegister}>Please Register</span></p>
-      <p className="text-xl font-bold pb-16 pt-5 ">Forgot Password ? <span className="text-orange-400 cursor-pointer" onClick={navigateResetPassword}>Reset Password</span></p>
+      <p className="text-xl font-bold pb-5 pt-5 ">If You Not Registered !! <span className="text-orange-400 cursor-pointer" onClick={navigateRegister}>Please Register</span></p>
+      <p className="text-xl font-bold pb-5  ">Forgot Password ? <span className="text-orange-400 cursor-pointer" onClick={navigateResetPassword}>Reset Password</span></p>
+
+      <SocialLogin></SocialLogin>
 
     </div>
+
+    
   );
 };
 
