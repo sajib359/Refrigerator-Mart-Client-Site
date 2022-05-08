@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -7,7 +8,9 @@ const Home = () => {
 
     <h1 className="text-6xl underline font-bold font-serif mt-5">Refrigerator <span className="text-red-700">Mart</span></h1>
     <p className="text-2xl font-mono font-semibold text-blue-500 mt-3 mb-3">Choose Your Best Option From US.... Stay Safe Stay Happy</p>
-    <a className="bg-lime-200 text-2xl text-blue-500  rounded p-2" href="https://ministerbd.net/product-category/refrigerator-bangladesh/">Buy Now</a>
+    <button className="bg-rose-300 p-2 mb-3">
+    <a className=" text-2xl text-blue-500" href="https://ministerbd.net/product-category/refrigerator-bangladesh/">Buy Now</a></button>
+      
     </div>
   );
 };
