@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>this is home page!!</h1>
-        </div>
-    );
+  return (
+    <div> 
+      <img src="https://waltonbd.com/image/catalog/refrigerator-and-freezer/non-frost.jpg" alt="" />
+    </div>
+  );
 };
 
 export default Home;
