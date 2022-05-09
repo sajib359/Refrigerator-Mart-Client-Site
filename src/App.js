@@ -9,7 +9,8 @@ import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import Login from './Components/User/Login/Login';
 import Register from './Components/User/Register/Register';
-import Footer from './Components/Footer/Footer';
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
+
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
       <Header></Header>
       <Routes>
             <Route path='/' element={<Home></Home>}></Route>
-            <Route path='/inventory' element={<ManageInventory></ManageInventory>}></Route>
-            <Route path='/myItems' element={<MyItems></MyItems>}></Route>
+            <Route path='/inventory' element={<ProtectedRoute><ManageInventory></ManageInventory></ProtectedRoute>}></Route>
+            <Route path='/myItems' element={<ProtectedRoute> <MyItems></MyItems></ProtectedRoute>}></Route>
             <Route path='/blogs' element={<Blogs></Blogs>}></Route>
             <Route path='/about' element={<About></About>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
