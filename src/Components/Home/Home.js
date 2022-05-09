@@ -3,12 +3,12 @@ import AllProducts from "../AllProducts/AllProducts";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
-  const[products,setProduct] = useState([]);
-  useEffect(()=>{
-    fetch("http://localhost:5000/manage")
-    .then(res=>res.json())
-    .then(data => setProduct(data));
-  },[]);
+  const [products, setProduct] = useState([]);
+  useEffect(() => {
+    fetch("https://glacial-river-10455.herokuapp.com/manage")
+      .then(res => res.json())
+      .then(data => setProduct(data));
+  }, []);
   return (
     <div>
       <img
@@ -31,17 +31,17 @@ const Home = () => {
           </a>
         </button>
       </div>
-        <div>
-          <h2 className="bg-green-300 text-3xl p-3 font-bold">Our Products</h2>
+      <div>
+        <h2 className="bg-green-300 text-3xl p-3 font-bold">Our Products</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mx-auto justify-items-center">
-        
-        {
-          products.slice(0, 6).map(product => <AllProducts key={product._id} product={product}></AllProducts>)
-        }
+
+          {
+            products.slice(0, 6).map(product => <AllProducts key={product._id} product={product}></AllProducts>)
+          }
+        </div>
+
       </div>
 
-        </div>
-      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12  rounded-2xl p-5 bg-slate-100">
         <div>
@@ -99,7 +99,7 @@ const Home = () => {
           <div>
             <div className="w-full shadow-xl bg-white rounded-2xl pb-5">
               <h1 className="text-center text-4xl font-bold text-blue-400 mb-2 pt-5">
-              বিপিএলে ঢাকা দলে যুক্ত হলো মিনিস্টার গ্রুপ
+                বিপিএলে ঢাকা দলে যুক্ত হলো মিনিস্টার গ্রুপ
               </h1>
               <small className="text-blue-700 font-bold mb-5">
                 Author: Sajib Hossain{" "}
@@ -110,8 +110,8 @@ const Home = () => {
                 alt=""
               />
               <p className="w-3/4 mx-auto mt-5">
-              দেশের অন্যতম করপোরেট প্রতিষ্ঠান মিনিস্টার গ্রুপ ঢাকার এবারের ফ্র্যাঞ্চ্যাইজি। বিষয়টি দৈনিক মানবজমিনকে নিশ্চিত করেছেন বিসিবি’র পরিচালক ও বিপিএল গভর্নিং কাউন্সিলের সদস্য সচিব ইসমাঈল হায়দার মল্লিক। তিনি বলেন, ‘মিনিস্টার গ্রুপ ঢাকা Minister  Dhaka দলের মালিকানায় থাকবে। এটা আমরা সিদ্ধান্ত নিয়েছি।
-              এর আগে ২০২০ বঙ্গবন্ধু টি-টোয়েন্টি কাপে মিনিস্টার গ্রুপ প্রতিনিধিত্ব করেছিল রাজশাহীর। এবার বিপিএলে রাজশাহী নেই। ঢাকা দলের নামকরণ করা হয়েছে ‘মিনিস্টার ঢাকা’। বিষয়টি নিশ্চিত করেছেন প্রতিষ্ঠানটির মিডিয়া ও মার্কেটিং প্রধান সোহেল কিবরিয়া। তিনি বলেন, “হ্যাঁ, আমরাদের ঢাকার ফ্র্যাঞ্চাইজি দেয়া হচ্ছে এটাই নিশ্চিত। এরই মধ্যে আমরা দলটির নাম রেখেছি মিনিস্টার ঢাকা।”
+                দেশের অন্যতম করপোরেট প্রতিষ্ঠান মিনিস্টার গ্রুপ ঢাকার এবারের ফ্র্যাঞ্চ্যাইজি। বিষয়টি দৈনিক মানবজমিনকে নিশ্চিত করেছেন বিসিবি’র পরিচালক ও বিপিএল গভর্নিং কাউন্সিলের সদস্য সচিব ইসমাঈল হায়দার মল্লিক। তিনি বলেন, ‘মিনিস্টার গ্রুপ ঢাকা Minister  Dhaka দলের মালিকানায় থাকবে। এটা আমরা সিদ্ধান্ত নিয়েছি।
+                এর আগে ২০২০ বঙ্গবন্ধু টি-টোয়েন্টি কাপে মিনিস্টার গ্রুপ প্রতিনিধিত্ব করেছিল রাজশাহীর। এবার বিপিএলে রাজশাহী নেই। ঢাকা দলের নামকরণ করা হয়েছে ‘মিনিস্টার ঢাকা’। বিষয়টি নিশ্চিত করেছেন প্রতিষ্ঠানটির মিডিয়া ও মার্কেটিং প্রধান সোহেল কিবরিয়া। তিনি বলেন, “হ্যাঁ, আমরাদের ঢাকার ফ্র্যাঞ্চাইজি দেয়া হচ্ছে এটাই নিশ্চিত। এরই মধ্যে আমরা দলটির নাম রেখেছি মিনিস্টার ঢাকা।”
               </p>
             </div>
           </div>

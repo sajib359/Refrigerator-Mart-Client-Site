@@ -4,7 +4,7 @@ const useProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/manage")
+    fetch("https://glacial-river-10455.herokuapp.com/manage")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

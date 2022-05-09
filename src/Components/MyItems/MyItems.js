@@ -12,7 +12,7 @@ const MyItems = () => {
     const [myProducts, setMyProducts] = useMyProducts();
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/view/${id}`;
+        const url = `https://glacial-river-10455.herokuapp.com/view/${id}`;
         const askToSure = window.confirm("Are You Sure?");
         if (askToSure) {
             fetch(url, {
@@ -41,45 +41,46 @@ const MyItems = () => {
                         toast.error("Ops! Something Went Wrong")
                     }
                 });
-        }  };
+        }
+    };
 
-        return (
-            <div className="md:w-3/4 mx-auto mt-6">
-                <h2 className="text-3xl font-bold text-center mb-4">
-                    Products Uploaded By You
-                </h2>
+    return (
+        <div className="md:w-3/4 mx-auto mt-6">
+            <h2 className="text-3xl font-bold text-center mb-4">
+                Products Uploaded By You
+            </h2>
 
-                <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" className="px-6 py-3">
-                                    Product name
-                                </th>
-                                <th scope="col" className="px-6 py-3">
-                                    Quantity
-                                </th>
-                                <th scope="col" className="px-6 py-3">
-                                    Supplier
-                                </th>
-                                <th scope="col" className="px-6 py-3">
-                                    Price
-                                </th>
-                                <th scope="col" className="px-6 py-3">
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {myProducts.map((product) => (
-                                <Items key={product._id} product={product} handleDelete={handleDelete}></Items>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-                <Link className="w-full bg-green-400 text-center block py-2 rounded mt-6 font-2xl hover:bg-green-700 hover:text-white" to={'/add'}>Add More Product</Link>
+            <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" className="px-6 py-3">
+                                Product name
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                                Quantity
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                                Supplier
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                                Price
+                            </th>
+                            <th scope="col" className="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {myProducts.map((product) => (
+                            <Items key={product._id} product={product} handleDelete={handleDelete}></Items>
+                        ))}
+                    </tbody>
+                </table>
             </div>
-        );
-  
-                            }
- export default MyItems;
+            <Link className="w-full bg-green-400 text-center block py-2 rounded mt-6 font-2xl hover:bg-green-700 hover:text-white" to={'/add'}>Add More Product</Link>
+        </div>
+    );
+
+}
+export default MyItems;

@@ -32,7 +32,7 @@ const AddProduct = () => {
       owneremail,
       userid,
     };
-    const url = "http://localhost:5000/product";
+    const url = "https://glacial-river-10455.herokuapp.com/product";
     fetch(url, {
       method: "POST",
       headers: {
@@ -141,24 +141,24 @@ const AddProduct = () => {
               placeholder="How much"
             />
           </div>
-        
-        <div className="flex flex-wrap -mx-3 mb-2">
-          <div className="w-full md:w-full px-3 mb-6 md:mb-0">
-            <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-city"
-            >
-              Quantity
-            </label>
-            <input
-              ref={quantityRef}
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-city"
-              type="text"
-              name="quantity"
-              placeholder="Quantity count"
-            />
-          </div>
+
+          <div className="flex flex-wrap -mx-3 mb-2">
+            <div className="w-full md:w-full px-3 mb-6 md:mb-0">
+              <label
+                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-city"
+              >
+                Quantity
+              </label>
+              <input
+                ref={quantityRef}
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-city"
+                type="text"
+                name="quantity"
+                placeholder="Quantity count"
+              />
+            </div>
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -217,7 +217,7 @@ const AddProduct = () => {
               </div>
             </div>
           </div>
-          
+
           <button
             type="submit"
             className="bg-blue-400 font-bold p-2 mx-auto mt-3"

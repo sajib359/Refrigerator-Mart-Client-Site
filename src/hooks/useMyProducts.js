@@ -7,7 +7,7 @@ const useMyProducts = () => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/my?uid=${user.uid}`)
+    fetch(`https://glacial-river-10455.herokuapp.com/my?uid=${user.uid}`)
       .then((res) => res.json())
       .then((data) => setMyProducts(data));
   }, []);

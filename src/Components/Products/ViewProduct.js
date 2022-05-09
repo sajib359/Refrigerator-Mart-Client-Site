@@ -7,7 +7,7 @@ const ViewProduct = () => {
   const { id } = useParams();
   const quantityRef = useRef("");
   useEffect(() => {
-    const url = `http://localhost:5000/view/${id}`;
+    const url = `https://glacial-river-10455.herokuapp.com/view/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setSProduct(data));
@@ -18,7 +18,7 @@ const ViewProduct = () => {
     const quantity =
       parseInt(quantityRef.current.value) + parseInt(sProduct.quantity);
     const newQty = { quantity };
-    const url = `http://localhost:5000/sview/${id}`;
+    const url = `https://glacial-river-10455.herokuapp.com/sview/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
