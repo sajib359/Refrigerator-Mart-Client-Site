@@ -11,6 +11,7 @@ const AddProduct = () => {
   const descriptionRef = useRef("");
   const imgurlRef = useRef("");
   const quantityRef = useRef("");
+
   const handleBtn = (e) => {
     e.preventDefault();
     const name = nameRef.current.value;
@@ -140,9 +141,9 @@ const AddProduct = () => {
               placeholder="How much"
             />
           </div>
-        </div>
+        
         <div className="flex flex-wrap -mx-3 mb-2">
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="w-full md:w-full px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="grid-city"
@@ -157,6 +158,7 @@ const AddProduct = () => {
               name="quantity"
               placeholder="Quantity count"
             />
+          </div>
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -215,7 +217,7 @@ const AddProduct = () => {
               </div>
             </div>
           </div>
-
+          
           <button
             type="submit"
             className="bg-blue-400 font-bold p-2 mx-auto mt-3"

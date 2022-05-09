@@ -4,7 +4,7 @@ const useProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://gadhop.herokuapp.com/manage")
+    fetch("http://localhost:5000/manage")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

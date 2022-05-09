@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import useProducts from '../../hooks/useProducts';
 import Items from './Items';
 
 const ManageInventory = () => {
     const [products, setProducts] = useProducts();
+     
 
-    // useEffect(() => {
-    //   fetch("https://gadhop.herokuapp.com/manage")
-    //     .then((res) => res.json())
-    //     .then((data) => setProducts(data));
-    // }, []);
   
     const handleDelete = (id) => {
-      const url = `https://gadhop.herokuapp.com/view/${id}`;
+      const url = `http://localhost:5000/view/${id}`;
       const askToSure = window.confirm("Are You Sure?");
       if (askToSure) {
         fetch(url, {

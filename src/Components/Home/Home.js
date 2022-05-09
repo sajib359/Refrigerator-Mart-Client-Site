@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AllProducts from "../AllProducts/AllProducts";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
+  const[products,setProduct] = useState([]);
+  useEffect(()=>{
+    fetch("http://localhost:5000/manage")
+    .then(res=>res.json())
+    .then(data => setProduct(data));
+  },[]);
   return (
     <div>
       <img
@@ -24,6 +31,17 @@ const Home = () => {
           </a>
         </button>
       </div>
+        <div>
+          <h2 className="bg-green-300 text-3xl p-3 font-bold">Our Products</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mx-auto justify-items-center">
+        
+        {
+          products.slice(0, 6).map(product => <AllProducts key={product._id} product={product}></AllProducts>)
+        }
+      </div>
+
+        </div>
+      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12  rounded-2xl p-5 bg-slate-100">
         <div>
