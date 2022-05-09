@@ -7,7 +7,7 @@ const Blogs = () => {
           Question & Answering Section
         </h1>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12  rounded-2xl p-5 ">
-                <div className="w-full shadow-xl">
+                <div className="w-full shadow-xl pb-5">
                     <div>
                         <h2 className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">Whats the Difference between Javascript and Nodejs?</h2>
                     </div>
@@ -35,7 +35,7 @@ const Blogs = () => {
                     </div>
                 </div>
 
-                <div className='w-full shadow-xl'>
+                <div className='w-full shadow-xl pb-5'>
                     <div className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">When should you use Nodejs and when should you use Mongodb?</div>
                     <div>
                         <img className='mx-auto' src="https://javabeat.net/wp-content/uploads/2015/04/node-js-mongodb.png" alt="" />
@@ -45,7 +45,7 @@ const Blogs = () => {
                     </div>
                 </div>
 
-                <div className="w-full shadow-xl">
+                <div className="w-full shadow-xl pb-5">
                     <div>
                         <h2 className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">Whats the Difference between SQL and NOSQL?</h2>
                     </div>
@@ -73,7 +73,7 @@ const Blogs = () => {
                     </div>
                 </div>
 
-                <div className="w-full shadow-xl">
+                <div className="w-full shadow-xl pb-5">
                     <div>
                         <h2 className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">Whats is the purpose of Jwt and how does it works?</h2>
                     </div>

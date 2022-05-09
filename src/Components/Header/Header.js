@@ -18,7 +18,7 @@ const Header = () => {
         <div >
         <nav className='grid md:flex gap-5 justify-center bg-teal-400 p-4 text-2xl font-mono font-bold'>
             
-            <div className='flex text-orange-800 font-thin gap-3'> 
+            <div className='flex text-orange-800 font-mono gap-1'> 
                 <img className='w-10 h-10 ' src="refrizartor.png" alt="" />
                 <h3>Refrigerator <span>Mart</span></h3>
 

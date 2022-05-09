@@ -1,6 +1,10 @@
 import React from "react";
 
 const AddProduct = () => {
+    const handleBtn= event =>{
+        event.preventDefault();
+        console.log("clicked");
+    }
   return (
     <div className="">
       <form className="w-full mx-auto max-w-lg">
@@ -126,7 +130,7 @@ const AddProduct = () => {
             </div>
           </div>
 
-          <button className="bg-blue-400 font-bold p-2 mx-auto mt-3">Add Product</button>
+          <button className="bg-blue-400 font-bold p-2 mx-auto mt-3" onClick={handleBtn}>Add Product</button>
         </div>
 
       </form>
