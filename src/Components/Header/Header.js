@@ -16,7 +16,7 @@ const Header = () => {
     }
     return (
         <div >
-        <nav className='grid md:flex gap-5 justify-center bg-teal-400 p-4 text-2xl font-mono font-bold'>
+        <nav className='grid md:flex gap-5 justify-center bg-teal-400 p-4 text-2xl font-semibold font-bold'>
             
             <div className='flex text-orange-800 font-mono gap-1'> 
                 <img className='w-10 h-10 ' src="refrizartor.png" alt="" />
