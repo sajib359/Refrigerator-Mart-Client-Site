@@ -38,7 +38,7 @@ const Blogs = () => {
                 <div className='w-full shadow-xl'>
                     <div className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">When should you use Nodejs and when should you use Mongodb?</div>
                     <div>
-                        <img className='mx-auto' src="https://miro.medium.com/max/720/1*ay9nx1XdZ3AOzx5Ev8xJEg.png" alt="" />
+                        <img className='mx-auto' src="https://javabeat.net/wp-content/uploads/2015/04/node-js-mongodb.png" alt="" />
                     </div>
                     <div>
                         <p className='mt-5 p-5 font-mono '>MongoDB is the Document Oriented Database. MongoDB stores a lot of data in JSON format. MongoDB's performance is much faster than any RDBMS. MongoDB is designed to work with Large Scale Data. MongoDB can work on multiple servers. MongoDB can handle a large number of access requests easily. => There are 2 design patterns in programming. One is asynchronous programming and the other is synchronous programming. Node JS by default follows the Asynchronous pattern. That is, it does not wait for a task to be completed. In the meantime, NodeJS started another job. That’s why we use nodeJS.</p>
@@ -78,7 +78,7 @@ const Blogs = () => {
                         <h2 className="bg-black text-orange-500 text-2xl font-bold mb-5 p-3">Whats is the purpose of Jwt and how does it works?</h2>
                     </div>
                     <div>
-                       <img src="https://miro.medium.com/max/1400/1*AMeiWwTqbLAUe0bvdVTVLA.png" alt="" />
+                       <img src="https://curity.io/images/resources/architect/api-security/jwt.jpg" alt="" />
                     </div>
                     <div>
                         <h3 className="text-2xl font-bold mt-5"> Jwt:</h3>

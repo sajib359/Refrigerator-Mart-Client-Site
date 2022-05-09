@@ -26,6 +26,16 @@ const Home = () => {
       </div>
     </div>
       
+      <div>
+        <div className="justify-center ">
+          <h1 className="text-center text-4xl font-bold text-blue-400 mb-2">‘বেস্ট ব্র্যান্ড’ রেফ্রিজারেটর বিভাগে ৩য় ব্রান্ড এর স্বীকৃতি পেল মিনিস্টার</h1>
+          <small className="text-blue-700 font-bold mb-5">Author: Sajib Hossain </small>
+          <img  className="mx-auto" src="https://ministerbd.net/wp-content/uploads/2022/01/best-brand-minister-2021.png" alt="" />
+          <p>বাংলাদেশ ব্রান্ড ফোরামের এর ‘বেস্ট ব্র্যান্ড’ রেফ্রিজারেটর বিভাগে ৩য় ব্রান্ড এর স্বীকৃতি পেল মিনিস্টার। সম্প্রতি রাজধানীতে ‘বেস্ট ব্র্যান্ড অ্যাওয়ার্ড ২০২১’ অনুষ্ঠানে এই স্বীকৃতি দেওয়া হয় মিনিস্টার গ্রুপকে। দেশের ফ্রিজ বাজারে ক্রেতার আস্থা অর্জনের মাধ্যমে টেকসই ব্র্যান্ড ইক্যুইটি তৈরির স্বীকৃতিস্বরূপ এই পুরস্কার পায় দেশের এই ইলেকট্রনিক্স জায়ান্ট।</p>
+          const info = ''
+          info.slice(0, 500)
+        </div>
+      </div>
     </div>
   );
 };
